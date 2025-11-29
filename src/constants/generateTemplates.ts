@@ -1060,6 +1060,655 @@ const magmaVariants: TemplateVariantConfig[] = [
   },
 ];
 
+const atmosphereVariants: TemplateVariantConfig[] = [
+  {
+    slug: "stratos-halo",
+    label: "Stratos Halo",
+    summary: "violet mist x solar beam",
+    accent: "text-violet-200",
+    hero: {
+      eyebrow: "Generative Template",
+      title: "Atmos Array · Stratos Halo",
+      subtitle: "violet mist 配合金色 beam，營造宏大的大氣儀表舞台。",
+      chips: ["Halo Ready", "Solar Trace", "Calm Mist"],
+      stats: [
+        { label: "Theme Slots", value: "03", detail: "Mist · Pulse · Signal" },
+        { label: "Storyboard", value: "03", detail: "CTA · HUD · Canvas" },
+        { label: "Token Recipes", value: "03", detail: "Mist / Beam / Ray" },
+        { label: "Deploy Time", value: "47s", detail: "Replace Palette" },
+      ],
+    },
+    theme: {
+      slug: "atmos-template",
+      role: "artifact",
+      layout: {
+        shell: "bg-gradient-to-br from-slate-950 via-violet-950 to-indigo-950",
+        text: "text-slate-100",
+        border: "border-violet-400/40",
+      },
+      hero: {
+        surface: "bg-slate-950/85",
+        label: "text-violet-200",
+        body: "text-slate-300",
+        gradientText:
+          "bg-linear-to-r from-violet-200 via-purple-300 to-amber-300",
+        gridOverlay:
+          "bg-linear-to-br from-violet-300/25 via-transparent to-amber-200/25 opacity-60 mix-blend-soft-light",
+        glowPrimary: "bg-violet-400/30",
+        glowSecondary: "bg-amber-300/30",
+      },
+      surfaces: {
+        panel: "bg-slate-950/70",
+        softPanel: "bg-slate-950/60",
+        border: "border-violet-400/30",
+      },
+      text: {
+        section: "text-violet-200",
+        muted: "text-slate-400",
+      },
+      badges: {
+        base: "bg-slate-900/60",
+        border: "border-violet-300/30",
+        text: "text-violet-100",
+      },
+      buttons: {
+        primary:
+          "bg-linear-to-r from-violet-300 via-purple-400 to-amber-300 text-slate-950 font-semibold rounded-full",
+        secondary:
+          "border border-white/30 text-slate-100 rounded-full hover:bg-white/5",
+      },
+      tokens: {
+        chip: "bg-slate-900/60",
+        chipBorder: "border border-white/10",
+        chipText: "text-slate-100",
+        statCard: "rounded-2xl border border-white/10 bg-slate-900/60",
+        statValue: "text-white",
+        statLabel: "text-slate-400",
+      },
+      sidebar: {
+        shell:
+          "bg-gradient-to-b from-slate-950 via-violet-950 to-indigo-900 text-slate-100 border-violet-400/40",
+        headerBorder: "border-violet-400/40",
+        subtitle: "text-slate-400",
+        titleGradient:
+          "bg-linear-to-r from-violet-200 via-purple-300 to-amber-300",
+        sectionButton:
+          "bg-slate-900/70 border border-violet-400/40 text-slate-400 hover:border-amber-300 hover:text-white",
+        sectionTitle: "text-violet-200",
+        sectionSubtitle: "text-slate-500",
+        listBorder: "border-violet-400/30",
+        linkIdle: "text-slate-300 border-white/10",
+        linkHover:
+          "hover:text-white hover:border-violet-300 hover:bg-violet-300/10",
+        linkActive: "bg-violet-300/15 border-violet-200 text-white",
+        iconIdle: "text-slate-500",
+        iconActive: "text-violet-200",
+        footerDot: "bg-amber-300 ring-2 ring-amber-200/40",
+        footerText: "text-slate-400",
+      },
+    },
+    stageBackground:
+      "bg-[radial-gradient(circle_at_top,_rgba(196,181,253,0.16),_rgba(6,6,26,0.98))]",
+    card: {
+      slug: "stratos-halo",
+      name: "Stratos Halo",
+      origin: "Color Demo",
+      energy: "Mist / Beam",
+      description: "使用 violet mist 與 amber beam，堆疊大氣感 halo。",
+      gradient: "bg-linear-to-r from-violet-300 via-purple-400 to-amber-300",
+      stats: [
+        { label: "Mist", value: "45%" },
+        { label: "Pulse", value: "35%" },
+        { label: "Signal", value: "20%" },
+      ],
+      swatches: [
+        "bg-slate-950",
+        "bg-violet-600",
+        "bg-purple-400",
+        "bg-amber-300",
+      ],
+      accent: "text-violet-200",
+    },
+  },
+  {
+    slug: "auric-front",
+    label: "Auric Front",
+    summary: "amber glow x indigo pulse",
+    accent: "text-amber-200",
+    hero: {
+      eyebrow: "Generative Template",
+      title: "Atmos Array · Auric Front",
+      subtitle: "amber glow 與 indigo pulse 交錯，帶出雲頂預報場景。",
+      chips: ["Glow Orbit", "Storm Scan", "Auric Beam"],
+      stats: [
+        { label: "Theme Slots", value: "03", detail: "Mist · Pulse · Signal" },
+        { label: "Storyboard", value: "03", detail: "CTA · HUD · Canvas" },
+        { label: "Token Recipes", value: "03", detail: "Sheet / Beam / Ray" },
+        { label: "Deploy Time", value: "44s", detail: "Replace Palette" },
+      ],
+    },
+    theme: {
+      slug: "atmos-template",
+      role: "artifact",
+      layout: {
+        shell: "bg-gradient-to-br from-slate-950 via-amber-950 to-indigo-950",
+        text: "text-slate-100",
+        border: "border-amber-400/40",
+      },
+      hero: {
+        surface: "bg-slate-950/85",
+        label: "text-amber-200",
+        body: "text-slate-300",
+        gradientText:
+          "bg-linear-to-r from-amber-200 via-indigo-300 to-violet-300",
+        gridOverlay:
+          "bg-linear-to-br from-amber-300/25 via-transparent to-indigo-400/25 opacity-60 mix-blend-soft-light",
+        glowPrimary: "bg-amber-400/30",
+        glowSecondary: "bg-indigo-400/25",
+      },
+      surfaces: {
+        panel: "bg-slate-950/70",
+        softPanel: "bg-slate-950/60",
+        border: "border-amber-400/30",
+      },
+      text: {
+        section: "text-amber-200",
+        muted: "text-slate-400",
+      },
+      badges: {
+        base: "bg-slate-900/60",
+        border: "border-amber-300/30",
+        text: "text-amber-100",
+      },
+      buttons: {
+        primary:
+          "bg-linear-to-r from-amber-300 via-indigo-400 to-violet-400 text-slate-950 font-semibold rounded-full",
+        secondary:
+          "border border-white/30 text-slate-100 rounded-full hover:bg-white/5",
+      },
+      tokens: {
+        chip: "bg-slate-900/60",
+        chipBorder: "border border-white/10",
+        chipText: "text-slate-100",
+        statCard: "rounded-2xl border border-white/10 bg-slate-900/60",
+        statValue: "text-white",
+        statLabel: "text-slate-400",
+      },
+      sidebar: {
+        shell:
+          "bg-gradient-to-b from-slate-950 via-amber-950 to-indigo-950 text-slate-100 border-amber-400/40",
+        headerBorder: "border-amber-400/40",
+        subtitle: "text-slate-400",
+        titleGradient:
+          "bg-linear-to-r from-amber-200 via-indigo-300 to-violet-400",
+        sectionButton:
+          "bg-slate-900/70 border border-amber-400/40 text-slate-400 hover:border-indigo-300 hover:text-white",
+        sectionTitle: "text-amber-200",
+        sectionSubtitle: "text-slate-500",
+        listBorder: "border-amber-400/30",
+        linkIdle: "text-slate-300 border-white/10",
+        linkHover:
+          "hover:text-white hover:border-amber-300 hover:bg-amber-300/10",
+        linkActive: "bg-amber-300/15 border-amber-200 text-white",
+        iconIdle: "text-slate-500",
+        iconActive: "text-amber-200",
+        footerDot: "bg-amber-300 ring-2 ring-amber-200/40",
+        footerText: "text-slate-400",
+      },
+    },
+    stageBackground:
+      "bg-[radial-gradient(circle_at_top,_rgba(251,191,36,0.14),_rgba(6,8,24,0.98))]",
+    card: {
+      slug: "auric-front",
+      name: "Auric Front",
+      origin: "Art Direction",
+      energy: "Glow / Signal",
+      description: "amber glow 線條跨越 indigo 背景，呈現天氣帶動。",
+      gradient: "bg-linear-to-r from-amber-200 via-indigo-300 to-violet-400",
+      stats: [
+        { label: "Mist", value: "30%" },
+        { label: "Pulse", value: "40%" },
+        { label: "Signal", value: "30%" },
+      ],
+      swatches: [
+        "bg-slate-950",
+        "bg-amber-400",
+        "bg-indigo-500",
+        "bg-violet-500",
+      ],
+      accent: "text-amber-200",
+    },
+  },
+  {
+    slug: "polar-cirrus",
+    label: "Polar Cirrus",
+    summary: "cyan mist x aurora beam",
+    accent: "text-cyan-200",
+    hero: {
+      eyebrow: "Generative Template",
+      title: "Atmos Array · Polar Cirrus",
+      subtitle: "cyan mist 為基地，aurora beam 拉出高空資料波。",
+      chips: ["Cirrus Scan", "Blue Orbit", "Calm Pulse"],
+      stats: [
+        { label: "Theme Slots", value: "03", detail: "Mist · Pulse · Signal" },
+        { label: "Storyboard", value: "03", detail: "CTA · HUD · Canvas" },
+        {
+          label: "Token Recipes",
+          value: "03",
+          detail: "Mist / Pulse / Signal",
+        },
+        { label: "Deploy Time", value: "41s", detail: "Replace Palette" },
+      ],
+    },
+    theme: {
+      slug: "atmos-template",
+      role: "artifact",
+      layout: {
+        shell: "bg-gradient-to-br from-slate-950 via-cyan-950 to-violet-950",
+        text: "text-slate-100",
+        border: "border-cyan-400/40",
+      },
+      hero: {
+        surface: "bg-slate-950/85",
+        label: "text-cyan-200",
+        body: "text-slate-300",
+        gradientText: "bg-linear-to-r from-cyan-200 via-sky-300 to-violet-300",
+        gridOverlay:
+          "bg-linear-to-br from-cyan-300/25 via-transparent to-violet-400/25 opacity-60 mix-blend-soft-light",
+        glowPrimary: "bg-cyan-300/30",
+        glowSecondary: "bg-violet-300/25",
+      },
+      surfaces: {
+        panel: "bg-slate-950/70",
+        softPanel: "bg-slate-950/60",
+        border: "border-cyan-400/30",
+      },
+      text: {
+        section: "text-cyan-200",
+        muted: "text-slate-400",
+      },
+      badges: {
+        base: "bg-slate-900/60",
+        border: "border-cyan-300/30",
+        text: "text-cyan-100",
+      },
+      buttons: {
+        primary:
+          "bg-linear-to-r from-cyan-300 via-sky-400 to-violet-400 text-slate-950 font-semibold rounded-full",
+        secondary:
+          "border border-white/30 text-slate-100 rounded-full hover:bg-white/5",
+      },
+      tokens: {
+        chip: "bg-slate-900/60",
+        chipBorder: "border border-white/10",
+        chipText: "text-slate-100",
+        statCard: "rounded-2xl border border-white/10 bg-slate-900/60",
+        statValue: "text-white",
+        statLabel: "text-slate-400",
+      },
+      sidebar: {
+        shell:
+          "bg-gradient-to-b from-slate-950 via-cyan-950 to-violet-950 text-slate-100 border-cyan-400/40",
+        headerBorder: "border-cyan-400/40",
+        subtitle: "text-slate-400",
+        titleGradient: "bg-linear-to-r from-cyan-200 via-sky-300 to-violet-400",
+        sectionButton:
+          "bg-slate-900/70 border border-cyan-400/40 text-slate-400 hover:border-violet-300 hover:text-white",
+        sectionTitle: "text-cyan-200",
+        sectionSubtitle: "text-slate-500",
+        listBorder: "border-cyan-400/30",
+        linkIdle: "text-slate-300 border-white/10",
+        linkHover:
+          "hover:text-white hover:border-cyan-300 hover:bg-cyan-300/10",
+        linkActive: "bg-cyan-300/15 border-cyan-200 text-white",
+        iconIdle: "text-slate-500",
+        iconActive: "text-cyan-200",
+        footerDot: "bg-cyan-300 ring-2 ring-cyan-200/40",
+        footerText: "text-slate-400",
+      },
+    },
+    stageBackground:
+      "bg-[radial-gradient(circle_at_top,_rgba(34,211,238,0.14),_rgba(5,8,24,0.98))]",
+    card: {
+      slug: "polar-cirrus",
+      name: "Polar Cirrus",
+      origin: "Color Demo",
+      energy: "Mist / Signal",
+      description: "cyan mist 與 aurora beam 讓空氣層帶有科幻感。",
+      gradient: "bg-linear-to-r from-cyan-200 via-sky-300 to-violet-400",
+      stats: [
+        { label: "Mist", value: "40%" },
+        { label: "Pulse", value: "30%" },
+        { label: "Signal", value: "30%" },
+      ],
+      swatches: ["bg-slate-950", "bg-cyan-500", "bg-sky-400", "bg-violet-500"],
+      accent: "text-cyan-200",
+    },
+  },
+];
+
+const techVariants: TemplateVariantConfig[] = [
+  {
+    slug: "ion-grid",
+    label: "Ion Grid",
+    summary: "plasma mist x neon circuit",
+    accent: "text-cyan-200",
+    hero: {
+      eyebrow: "Generative Template",
+      title: "Neon Forge · Ion Grid",
+      subtitle: "霓虹電路搭配 plasma 霧層，展現高科技監控場景。",
+      chips: ["Circuit Safe", "Neon Beam", "Core Logic"],
+      stats: [
+        { label: "Theme Slots", value: "03", detail: "Mist · Pulse · Signal" },
+        { label: "Storyboard", value: "03", detail: "CTA · HUD · Canvas" },
+        { label: "Token Recipes", value: "03", detail: "Sheet / Trace / Beam" },
+        { label: "Deploy Time", value: "39s", detail: "Replace Palette" },
+      ],
+    },
+    theme: {
+      slug: "tech-template",
+      role: "artifact",
+      layout: {
+        shell: "bg-gradient-to-br from-slate-950 via-cyan-950 to-emerald-950",
+        text: "text-slate-100",
+        border: "border-cyan-400/40",
+      },
+      hero: {
+        surface: "bg-slate-950/85",
+        label: "text-cyan-200",
+        body: "text-slate-300",
+        gradientText:
+          "bg-linear-to-r from-cyan-200 via-emerald-300 to-lime-300",
+        gridOverlay:
+          "bg-linear-to-br from-cyan-300/25 via-transparent to-emerald-400/25 opacity-60 mix-blend-soft-light",
+        glowPrimary: "bg-cyan-300/30",
+        glowSecondary: "bg-emerald-300/25",
+      },
+      surfaces: {
+        panel: "bg-slate-950/70",
+        softPanel: "bg-slate-950/60",
+        border: "border-cyan-400/30",
+      },
+      text: {
+        section: "text-cyan-200",
+        muted: "text-slate-400",
+      },
+      badges: {
+        base: "bg-slate-900/60",
+        border: "border-cyan-300/30",
+        text: "text-cyan-100",
+      },
+      buttons: {
+        primary:
+          "bg-linear-to-r from-cyan-300 via-emerald-400 to-lime-400 text-slate-950 font-semibold rounded-full",
+        secondary:
+          "border border-white/30 text-slate-100 rounded-full hover:bg-white/5",
+      },
+      tokens: {
+        chip: "bg-slate-900/60",
+        chipBorder: "border border-white/10",
+        chipText: "text-slate-100",
+        statCard: "rounded-2xl border border-white/10 bg-slate-900/60",
+        statValue: "text-white",
+        statLabel: "text-slate-400",
+      },
+      sidebar: {
+        shell:
+          "bg-gradient-to-b from-slate-950 via-cyan-950 to-emerald-950 text-slate-100 border-cyan-400/40",
+        headerBorder: "border-cyan-400/40",
+        subtitle: "text-slate-400",
+        titleGradient:
+          "bg-linear-to-r from-cyan-200 via-emerald-300 to-lime-400",
+        sectionButton:
+          "bg-slate-900/70 border border-cyan-400/40 text-slate-400 hover:border-emerald-300 hover:text-white",
+        sectionTitle: "text-cyan-200",
+        sectionSubtitle: "text-slate-500",
+        listBorder: "border-cyan-400/30",
+        linkIdle: "text-slate-300 border-white/10",
+        linkHover:
+          "hover:text-white hover:border-cyan-300 hover:bg-cyan-300/10",
+        linkActive: "bg-cyan-300/15 border-cyan-200 text-white",
+        iconIdle: "text-slate-500",
+        iconActive: "text-cyan-200",
+        footerDot: "bg-cyan-300 ring-2 ring-cyan-200/40",
+        footerText: "text-slate-400",
+      },
+    },
+    stageBackground:
+      "bg-[radial-gradient(circle_at_top,_rgba(34,211,238,0.14),_rgba(2,10,8,0.98))]",
+    card: {
+      slug: "ion-grid",
+      name: "Ion Grid",
+      origin: "Color Demo",
+      energy: "Mist / Pulse",
+      description: "plasma 霧與 neon 電路，製造高科技監控節奏。",
+      gradient: "bg-linear-to-r from-cyan-200 via-emerald-300 to-lime-300",
+      stats: [
+        { label: "Mist", value: "35%" },
+        { label: "Pulse", value: "40%" },
+        { label: "Signal", value: "25%" },
+      ],
+      swatches: [
+        "bg-slate-950",
+        "bg-cyan-500",
+        "bg-emerald-400",
+        "bg-lime-400",
+      ],
+      accent: "text-cyan-200",
+    },
+  },
+  {
+    slug: "quantum-node",
+    label: "Quantum Node",
+    summary: "ultra violet x neon magenta",
+    accent: "text-fuchsia-200",
+    hero: {
+      eyebrow: "Generative Template",
+      title: "Neon Forge · Quantum Node",
+      subtitle: "紫外 pulse 配搭 magenta ray，展示資料核融合。",
+      chips: ["Node Ready", "Pulse Bridge", "Quantum Sync"],
+      stats: [
+        { label: "Theme Slots", value: "03", detail: "Mist · Pulse · Signal" },
+        { label: "Storyboard", value: "03", detail: "CTA · HUD · Canvas" },
+        { label: "Token Recipes", value: "03", detail: "Sheet / Ray / Core" },
+        { label: "Deploy Time", value: "42s", detail: "Replace Palette" },
+      ],
+    },
+    theme: {
+      slug: "tech-template",
+      role: "artifact",
+      layout: {
+        shell: "bg-gradient-to-br from-slate-950 via-fuchsia-950 to-indigo-950",
+        text: "text-slate-100",
+        border: "border-fuchsia-400/40",
+      },
+      hero: {
+        surface: "bg-slate-950/85",
+        label: "text-fuchsia-200",
+        body: "text-slate-300",
+        gradientText:
+          "bg-linear-to-r from-fuchsia-200 via-purple-300 to-cyan-300",
+        gridOverlay:
+          "bg-linear-to-br from-fuchsia-300/25 via-transparent to-cyan-300/25 opacity-60 mix-blend-soft-light",
+        glowPrimary: "bg-fuchsia-400/30",
+        glowSecondary: "bg-cyan-300/25",
+      },
+      surfaces: {
+        panel: "bg-slate-950/70",
+        softPanel: "bg-slate-950/60",
+        border: "border-fuchsia-400/30",
+      },
+      text: {
+        section: "text-fuchsia-200",
+        muted: "text-slate-400",
+      },
+      badges: {
+        base: "bg-slate-900/60",
+        border: "border-fuchsia-300/30",
+        text: "text-fuchsia-100",
+      },
+      buttons: {
+        primary:
+          "bg-linear-to-r from-fuchsia-300 via-purple-400 to-cyan-400 text-slate-950 font-semibold rounded-full",
+        secondary:
+          "border border-white/30 text-slate-100 rounded-full hover:bg-white/5",
+      },
+      tokens: {
+        chip: "bg-slate-900/60",
+        chipBorder: "border border-white/10",
+        chipText: "text-slate-100",
+        statCard: "rounded-2xl border border-white/10 bg-slate-900/60",
+        statValue: "text-white",
+        statLabel: "text-slate-400",
+      },
+      sidebar: {
+        shell:
+          "bg-gradient-to-b from-slate-950 via-fuchsia-950 to-indigo-950 text-slate-100 border-fuchsia-400/40",
+        headerBorder: "border-fuchsia-400/40",
+        subtitle: "text-slate-400",
+        titleGradient:
+          "bg-linear-to-r from-fuchsia-200 via-purple-300 to-cyan-300",
+        sectionButton:
+          "bg-slate-900/70 border border-fuchsia-400/40 text-slate-400 hover:border-cyan-300 hover:text-white",
+        sectionTitle: "text-fuchsia-200",
+        sectionSubtitle: "text-slate-500",
+        listBorder: "border-fuchsia-400/30",
+        linkIdle: "text-slate-300 border-white/10",
+        linkHover:
+          "hover:text-white hover:border-fuchsia-300 hover:bg-fuchsia-300/10",
+        linkActive: "bg-fuchsia-300/15 border-fuchsia-200 text-white",
+        iconIdle: "text-slate-500",
+        iconActive: "text-fuchsia-200",
+        footerDot: "bg-fuchsia-300 ring-2 ring-fuchsia-200/40",
+        footerText: "text-slate-400",
+      },
+    },
+    stageBackground:
+      "bg-[radial-gradient(circle_at_top,_rgba(232,121,249,0.16),_rgba(6,4,21,0.98))]",
+    card: {
+      slug: "quantum-node",
+      name: "Quantum Node",
+      origin: "Art Direction",
+      energy: "Pulse / Signal",
+      description: "紫外 pulse 與 magenta ray 共同凸顯資料核。",
+      gradient: "bg-linear-to-r from-fuchsia-200 via-purple-300 to-cyan-300",
+      stats: [
+        { label: "Mist", value: "25%" },
+        { label: "Pulse", value: "45%" },
+        { label: "Signal", value: "30%" },
+      ],
+      swatches: [
+        "bg-slate-950",
+        "bg-fuchsia-500",
+        "bg-purple-400",
+        "bg-cyan-400",
+      ],
+      accent: "text-fuchsia-200",
+    },
+  },
+  {
+    slug: "lumen-core",
+    label: "Lumen Core",
+    summary: "white plasma x cyan beam",
+    accent: "text-sky-200",
+    hero: {
+      eyebrow: "Generative Template",
+      title: "Neon Forge · Lumen Core",
+      subtitle: "白色 plasma 面板搭配 cyan beam，營造冷冽科技儀表。",
+      chips: ["Core Stable", "Lumen Glow", "Signal Orbit"],
+      stats: [
+        { label: "Theme Slots", value: "03", detail: "Mist · Pulse · Signal" },
+        { label: "Storyboard", value: "03", detail: "CTA · HUD · Canvas" },
+        { label: "Token Recipes", value: "03", detail: "Sheet / Pulse / Beam" },
+        { label: "Deploy Time", value: "37s", detail: "Replace Palette" },
+      ],
+    },
+    theme: {
+      slug: "tech-template",
+      role: "artifact",
+      layout: {
+        shell: "bg-gradient-to-br from-slate-950 via-sky-950 to-cyan-950",
+        text: "text-slate-100",
+        border: "border-sky-400/40",
+      },
+      hero: {
+        surface: "bg-slate-950/85",
+        label: "text-sky-200",
+        body: "text-slate-300",
+        gradientText: "bg-linear-to-r from-sky-200 via-cyan-300 to-white",
+        gridOverlay:
+          "bg-linear-to-br from-sky-300/25 via-transparent to-white/20 opacity-60 mix-blend-soft-light",
+        glowPrimary: "bg-sky-300/30",
+        glowSecondary: "bg-white/25",
+      },
+      surfaces: {
+        panel: "bg-slate-950/70",
+        softPanel: "bg-slate-950/60",
+        border: "border-sky-400/30",
+      },
+      text: {
+        section: "text-sky-200",
+        muted: "text-slate-400",
+      },
+      badges: {
+        base: "bg-slate-900/60",
+        border: "border-sky-300/30",
+        text: "text-sky-100",
+      },
+      buttons: {
+        primary:
+          "bg-linear-to-r from-sky-300 via-cyan-400 to-white text-slate-900 font-semibold rounded-full",
+        secondary:
+          "border border-white/30 text-slate-100 rounded-full hover:bg-white/5",
+      },
+      tokens: {
+        chip: "bg-slate-900/60",
+        chipBorder: "border border-white/10",
+        chipText: "text-slate-100",
+        statCard: "rounded-2xl border border-white/10 bg-slate-900/60",
+        statValue: "text-white",
+        statLabel: "text-slate-400",
+      },
+      sidebar: {
+        shell:
+          "bg-gradient-to-b from-slate-950 via-sky-950 to-cyan-950 text-slate-100 border-sky-400/40",
+        headerBorder: "border-sky-400/40",
+        subtitle: "text-slate-400",
+        titleGradient: "bg-linear-to-r from-sky-200 via-cyan-300 to-white",
+        sectionButton:
+          "bg-slate-900/70 border border-sky-400/40 text-slate-400 hover:border-cyan-300 hover:text-white",
+        sectionTitle: "text-sky-200",
+        sectionSubtitle: "text-slate-500",
+        listBorder: "border-sky-400/30",
+        linkIdle: "text-slate-300 border-white/10",
+        linkHover: "hover:text-white hover:border-sky-300 hover:bg-sky-300/10",
+        linkActive: "bg-sky-300/15 border-sky-200 text-white",
+        iconIdle: "text-slate-500",
+        iconActive: "text-sky-200",
+        footerDot: "bg-sky-300 ring-2 ring-sky-200/40",
+        footerText: "text-slate-400",
+      },
+    },
+    stageBackground:
+      "bg-[radial-gradient(circle_at_top,_rgba(125,211,252,0.16),_rgba(3,10,18,0.98))]",
+    card: {
+      slug: "lumen-core",
+      name: "Lumen Core",
+      origin: "Art Direction",
+      energy: "Glow / Signal",
+      description: "白色 plasma 面板搭配 cyan beam，冷冽科技儀表。",
+      gradient: "bg-linear-to-r from-sky-200 via-cyan-300 to-white",
+      stats: [
+        { label: "Mist", value: "30%" },
+        { label: "Pulse", value: "35%" },
+        { label: "Signal", value: "35%" },
+      ],
+      swatches: ["bg-slate-950", "bg-sky-500", "bg-cyan-400", "bg-white"],
+      accent: "text-sky-200",
+    },
+  },
+];
+
 const auroraTemplate: GenerateTemplateConfig = {
   slug: "aurora",
   name: "Aurora Flux Deck",
@@ -1611,10 +2260,377 @@ const magmaTemplate: GenerateTemplateConfig = {
   variantMap: buildVariantMap(magmaVariants),
 };
 
+const atmosphereTemplate: GenerateTemplateConfig = {
+  slug: "atmos",
+  name: "Atmos Array",
+  navLabel: "大氣生成模板",
+  navIcon: "M3 12h18M12 3v18",
+  switcherTitle: "Atmos Palette Switch",
+  switcherBody: "切換大氣色帶即可同步改變 hero、背景與 sidebar。",
+  boardTitle: "高空色稿面板",
+  boardSubtitle: "Color Demo x Atmos Direction",
+  boardDescription: "以 violet / amber / cyan 推出 Mist・Beam・Signal。",
+  storyboardsTitle: "大氣敘事節奏",
+  storyboardsDescription: "拆成 halo、beam、canvas 三段 storyboard。",
+  guidelinesTitle: "雲層 / 光束交叉表",
+  guidelinesDescription: "定義霧層與光束的配比，維持宏偉的天氣語彙。",
+  tokensTitle: "平流漸層庫",
+  tokensDescription: "列出 Mist / Beam / Signal 常用漸層並附 tips。",
+  applicationTitle: "大氣變奏樣板",
+  applicationDescription: "適用預報站、天文儀表、空境敘事等場景。",
+  buttonLeft: {
+    label: "輸出 JSON",
+    border: "border-violet-300/60",
+    text: "text-violet-100",
+    hover: "hover:bg-violet-300/10",
+  },
+  buttonRight: {
+    label: "更新色稿",
+    border: "border-amber-300/60",
+    text: "text-amber-100",
+    hover: "hover:bg-amber-300/10",
+  },
+  variants: atmosphereVariants,
+  storyboards: [
+    {
+      title: "Halo CTA",
+      tone: "Mist",
+      focus: "CTA",
+      badge: "text-violet-200",
+      description: "CTA 以 violet halo 包覆，邊緣加入金色描邊。",
+      preview:
+        "bg-linear-to-r from-violet-300/20 via-amber-200/10 to-transparent",
+      cues: ["描邊 1px", "hover glow 12px", "字重維持 600"],
+    },
+    {
+      title: "Jet HUD",
+      tone: "Signal",
+      focus: "HUD",
+      badge: "text-amber-200",
+      description: "HUD 線條沿 auric beam 移動，傳達高空資料。",
+      preview:
+        "bg-linear-to-r from-amber-300/20 via-indigo-400/10 to-transparent",
+      cues: ["線寬 0.5px", "節點 12px glow", "背景格線 8px"],
+    },
+    {
+      title: "Cirrus Canvas",
+      tone: "Mist",
+      focus: "Background",
+      badge: "text-cyan-200",
+      description: "大面積 cyan mist 與 violet halo 交錯，維持 50% 暗部。",
+      preview:
+        "bg-linear-to-r from-slate-950/90 via-slate-900/60 to-slate-900/40",
+      cues: ["暗部 50%", "亮點僅角落", "噪點 3%"],
+    },
+  ],
+  guidelineMatrix: [
+    {
+      principle: "雲層分層",
+      mode: "Layer",
+      palette: "Stratos · Mist/Beam",
+      direction: "外圈 violet 霧, 內圈 amber beam",
+      action: "Mist 55%，Beam 僅在 CTA 與 hero label。",
+      paletteSwatches: [
+        "bg-slate-950",
+        "bg-violet-600",
+        "bg-purple-400",
+        "bg-amber-400",
+      ],
+      directionSwatches: [
+        "bg-linear-to-r from-violet-400/40 to-transparent",
+        "bg-linear-to-r from-amber-300/30 to-transparent",
+        "bg-slate-900",
+        "bg-linear-to-r from-white/10 to-transparent",
+      ],
+    },
+    {
+      principle: "光束節奏",
+      mode: "Contrast",
+      palette: "Auric · Pulse/Signal",
+      direction: "Pulse 40 / Signal 30 / Base 30",
+      action: "Pulse 用於標題，Signal 只在重點指示燈。",
+      paletteSwatches: [
+        "bg-slate-950",
+        "bg-amber-400",
+        "bg-indigo-500",
+        "bg-violet-500",
+      ],
+      directionSwatches: [
+        "bg-slate-900",
+        "bg-linear-to-r from-amber-400 to-amber-300",
+        "bg-linear-to-r from-indigo-500 to-violet-400",
+        "bg-slate-800",
+      ],
+    },
+    {
+      principle: "極光呼吸",
+      mode: "Halo",
+      palette: "Cirrus · Glow",
+      direction: "cyan halo + violet ray",
+      action: "Halo 半徑相差 28px，ray 緊貼 CTA。",
+      paletteSwatches: [
+        "bg-slate-900",
+        "bg-cyan-300",
+        "bg-sky-400",
+        "bg-violet-400",
+      ],
+      directionSwatches: [
+        "bg-linear-to-r from-cyan-300/40 to-transparent",
+        "bg-linear-to-r from-sky-400/30 to-transparent",
+        "bg-linear-to-r from-violet-400/30 to-transparent",
+        "bg-slate-950",
+      ],
+    },
+  ],
+  gradientTokens: [
+    {
+      name: "Stratos Sheet",
+      usage: "背景",
+      token: "token-stratos",
+      gradient: "bg-linear-to-b from-slate-950 via-slate-900 to-slate-900",
+      tips: ["blur 16px", "noise 3%"],
+    },
+    {
+      name: "Auric Beam",
+      usage: "CTA / Tag",
+      token: "token-auric",
+      gradient: "bg-linear-to-r from-amber-200 via-indigo-300 to-violet-400",
+      tips: ["描邊 1px 白", "hover 時加 glow"],
+    },
+    {
+      name: "Cirrus Ray",
+      usage: "HUD",
+      token: "token-cirrus",
+      gradient: "bg-linear-to-r from-cyan-200 via-sky-300 to-violet-300",
+      tips: ["線寬 0.75px", "blur 14px"],
+    },
+  ],
+  applicationDeck: [
+    {
+      label: "Orbit HUD",
+      theme: "Stratos Halo",
+      channel: "Data",
+      description: "HUD 以 violet→amber 漸層追蹤高空資料。",
+      preview: "bg-linear-to-br from-violet-400/20 via-slate-900 to-slate-950",
+      swatches: ["text-violet-200", "text-amber-200", "text-slate-400"],
+    },
+    {
+      label: "Forecast Narrative",
+      theme: "Auric Front",
+      channel: "Story",
+      description: "敘事卡採 amber beam 描邊，保留雲層噪點。",
+      preview: "bg-linear-to-br from-amber-300/20 via-slate-900 to-slate-950",
+      swatches: ["text-amber-200", "text-indigo-200", "text-white"],
+    },
+    {
+      label: "Cirrus Monitor",
+      theme: "Polar Cirrus",
+      channel: "Monitor",
+      description: "監控面板以 cyan signal 提示異常，底層保持 60% 暗度。",
+      preview: "bg-linear-to-br from-cyan-300/30 via-slate-950 to-slate-950",
+      swatches: ["text-cyan-200", "text-violet-200", "text-slate-300"],
+    },
+  ],
+  swatchLabelMap: {
+    "text-violet-200": "Mist",
+    "text-amber-200": "Pulse",
+    "text-cyan-200": "Signal",
+    "text-slate-400": "Base",
+    "text-white": "Contrast",
+    "text-slate-300": "Support",
+  },
+  variantMap: buildVariantMap(atmosphereVariants),
+};
+
+const techTemplate: GenerateTemplateConfig = {
+  slug: "tech",
+  name: "Neon Forge",
+  navLabel: "科技生成模板",
+  navIcon: "M7 8h10l4 4-4 4H7L3 12z",
+  switcherTitle: "Neon Palette Switch",
+  switcherBody: "切換霓虹色帶，讓高科技 hero、背景與 sidebar 同步更新。",
+  boardTitle: "科技脈衝面板",
+  boardSubtitle: "Color Demo x System Direction",
+  boardDescription: "以 cyan / fuchsia / white 建構 Mist・Pulse・Signal。",
+  storyboardsTitle: "科技敘事節奏",
+  storyboardsDescription: "拆成 grid、nodes、canvas 三段 storyboard。",
+  guidelinesTitle: "電路 / 光束交叉表",
+  guidelinesDescription: "定義電路亮度與 pulse 權重，維持高對比資訊流。",
+  tokensTitle: "霓虹漸層庫",
+  tokensDescription: "列出 Sheet / Trace / Beam 三組漸層與提示。",
+  applicationTitle: "科技變奏樣板",
+  applicationDescription: "適合控制板、風險看板、量測儀等數據場景。",
+  buttonLeft: {
+    label: "輸出 JSON",
+    border: "border-cyan-300/60",
+    text: "text-cyan-100",
+    hover: "hover:bg-cyan-300/10",
+  },
+  buttonRight: {
+    label: "更新色稿",
+    border: "border-fuchsia-300/60",
+    text: "text-fuchsia-100",
+    hover: "hover:bg-fuchsia-300/10",
+  },
+  variants: techVariants,
+  storyboards: [
+    {
+      title: "Grid CTA",
+      tone: "Circuit",
+      focus: "CTA",
+      badge: "text-cyan-200",
+      description: "CTA 採透明電路描邊，底層貼著 cyan beam。",
+      preview:
+        "bg-linear-to-r from-cyan-300/20 via-emerald-300/10 to-transparent",
+      cues: ["描邊 1px", "hover scale 1.04", "陰影採 neon"],
+    },
+    {
+      title: "Node HUD",
+      tone: "Pulse",
+      focus: "HUD",
+      badge: "text-fuchsia-200",
+      description: "HUD 以 fuchsia node 連接，維持 10px 網格。",
+      preview:
+        "bg-linear-to-r from-fuchsia-300/20 via-purple-300/10 to-transparent",
+      cues: ["線寬 0.5px", "節點 10px", "背板 opacity 70%"],
+    },
+    {
+      title: "Lumen Canvas",
+      tone: "Mist",
+      focus: "Background",
+      badge: "text-sky-200",
+      description: "大面積 sky mist 搭配 cyan halo，凸顯高科技深度。",
+      preview:
+        "bg-linear-to-r from-slate-950/90 via-slate-900/60 to-slate-900/40",
+      cues: ["暗部 45%", "亮度聚焦中心", "噪點 4%"],
+    },
+  ],
+  guidelineMatrix: [
+    {
+      principle: "電路層次",
+      mode: "Layer",
+      palette: "Ion · Mist/Pulse",
+      direction: "外圈 cyan 霧, 內圈 lime pulse",
+      action: "Mist 50%，Pulse 限定 CTA 與重點框。",
+      paletteSwatches: [
+        "bg-slate-950",
+        "bg-cyan-500",
+        "bg-emerald-400",
+        "bg-lime-400",
+      ],
+      directionSwatches: [
+        "bg-linear-to-r from-cyan-400/40 to-transparent",
+        "bg-linear-to-r from-emerald-300/30 to-transparent",
+        "bg-slate-900",
+        "bg-linear-to-r from-white/10 to-transparent",
+      ],
+    },
+    {
+      principle: "脈衝權重",
+      mode: "Contrast",
+      palette: "Quantum · Pulse/Signal",
+      direction: "Pulse 45 / Signal 35 / Base 20",
+      action: "Pulse 為主標, Signal 僅限 icon 與儀表指示。",
+      paletteSwatches: [
+        "bg-slate-950",
+        "bg-fuchsia-500",
+        "bg-purple-400",
+        "bg-cyan-400",
+      ],
+      directionSwatches: [
+        "bg-slate-900",
+        "bg-linear-to-r from-fuchsia-500 to-purple-400",
+        "bg-linear-to-r from-cyan-400 to-sky-300",
+        "bg-slate-800",
+      ],
+    },
+    {
+      principle: "光核節奏",
+      mode: "Halo",
+      palette: "Lumen · Glow",
+      direction: "white halo + cyan beam",
+      action: "Halo 半徑差 32px，beam 貼合 CTA。",
+      paletteSwatches: [
+        "bg-slate-900",
+        "bg-white",
+        "bg-sky-400",
+        "bg-cyan-400",
+      ],
+      directionSwatches: [
+        "bg-linear-to-r from-white/40 to-transparent",
+        "bg-linear-to-r from-sky-400/30 to-transparent",
+        "bg-linear-to-r from-cyan-400/30 to-transparent",
+        "bg-slate-950",
+      ],
+    },
+  ],
+  gradientTokens: [
+    {
+      name: "Ion Sheet",
+      usage: "背景",
+      token: "token-ion",
+      gradient: "bg-linear-to-b from-slate-950 via-slate-900 to-slate-900",
+      tips: ["blur 18px", "噪點 5%"],
+    },
+    {
+      name: "Quantum Trace",
+      usage: "電路",
+      token: "token-quantum",
+      gradient: "bg-linear-to-r from-fuchsia-200 via-purple-300 to-cyan-300",
+      tips: ["線寬 0.6px", "加柔光 20%"],
+    },
+    {
+      name: "Lumen Beam",
+      usage: "CTA",
+      token: "token-lumen",
+      gradient: "bg-linear-to-r from-sky-200 via-cyan-300 to-white",
+      tips: ["描邊 1px", "hover glow 14px"],
+    },
+  ],
+  applicationDeck: [
+    {
+      label: "Logic HUD",
+      theme: "Ion Grid",
+      channel: "Data",
+      description: "HUD 以 cyan→lime 線條呈現能源儀表。",
+      preview: "bg-linear-to-br from-cyan-300/20 via-slate-900 to-slate-950",
+      swatches: ["text-cyan-200", "text-emerald-200", "text-slate-400"],
+    },
+    {
+      label: "Quantum Narrative",
+      theme: "Quantum Node",
+      channel: "Story",
+      description: "敘事卡使用 fuchsia pulse 描邊，凸顯資料核心。",
+      preview: "bg-linear-to-br from-fuchsia-300/20 via-slate-900 to-slate-950",
+      swatches: ["text-fuchsia-200", "text-cyan-200", "text-white"],
+    },
+    {
+      label: "Lumen Monitor",
+      theme: "Lumen Core",
+      channel: "Monitor",
+      description: "儀表板加入白色 halo 與 cyan alert，維持高科技空氣感。",
+      preview: "bg-linear-to-br from-sky-300/30 via-slate-950 to-slate-950",
+      swatches: ["text-sky-200", "text-cyan-200", "text-slate-300"],
+    },
+  ],
+  swatchLabelMap: {
+    "text-cyan-200": "Mist",
+    "text-emerald-200": "Pulse",
+    "text-lime-200": "Signal",
+    "text-fuchsia-200": "Pulse",
+    "text-sky-200": "Glow",
+    "text-slate-400": "Base",
+    "text-white": "Contrast",
+  },
+  variantMap: buildVariantMap(techVariants),
+};
+
 const generateTemplates: GenerateTemplateConfig[] = [
   auroraTemplate,
   forestTemplate,
   magmaTemplate,
+  atmosphereTemplate,
+  techTemplate,
 ];
 
 export const generateTemplateMap: Record<string, GenerateTemplateConfig> =

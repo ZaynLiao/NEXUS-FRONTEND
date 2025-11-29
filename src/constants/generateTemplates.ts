@@ -20,7 +20,6 @@ export type TemplateVariantConfig = {
   accent: string;
   hero: NexusHeroContent;
   theme: NexusTheme;
-  heroBridge: string;
   stageBackground: string;
   card: TemplateVariantCard;
 };
@@ -183,8 +182,6 @@ const auroraVariants: TemplateVariantConfig[] = [
         footerText: "text-slate-400",
       },
     },
-    heroBridge:
-      "bg-gradient-to-b from-sky-400/20 via-slate-950/80 to-transparent",
     stageBackground:
       "bg-[radial-gradient(circle_at_top,_rgba(56,189,248,0.16),_rgba(4,10,24,0.98))]",
     card: {
@@ -288,8 +285,6 @@ const auroraVariants: TemplateVariantConfig[] = [
         footerText: "text-slate-400",
       },
     },
-    heroBridge:
-      "bg-gradient-to-b from-indigo-400/20 via-slate-950/80 to-transparent",
     stageBackground:
       "bg-[radial-gradient(circle_at_top,_rgba(129,140,248,0.14),_rgba(2,6,23,0.98))]",
     card: {
@@ -397,8 +392,6 @@ const auroraVariants: TemplateVariantConfig[] = [
         footerText: "text-slate-400",
       },
     },
-    heroBridge:
-      "bg-gradient-to-b from-cyan-300/20 via-slate-950/80 to-transparent",
     stageBackground:
       "bg-[radial-gradient(circle_at_top,_rgba(34,211,238,0.16),_rgba(5,10,25,0.98))]",
     card: {
@@ -506,8 +499,6 @@ const forestVariants: TemplateVariantConfig[] = [
         footerText: "text-slate-400",
       },
     },
-    heroBridge:
-      "bg-gradient-to-b from-emerald-300/20 via-slate-950/80 to-transparent",
     stageBackground:
       "bg-[radial-gradient(circle_at_top,_rgba(16,185,129,0.16),_rgba(4,10,18,0.98))]",
     card: {
@@ -617,8 +608,6 @@ const forestVariants: TemplateVariantConfig[] = [
         footerText: "text-slate-400",
       },
     },
-    heroBridge:
-      "bg-gradient-to-b from-teal-300/20 via-slate-950/80 to-transparent",
     stageBackground:
       "bg-[radial-gradient(circle_at_top,_rgba(45,212,191,0.16),_rgba(3,15,18,0.98))]",
     card: {
@@ -728,8 +717,6 @@ const forestVariants: TemplateVariantConfig[] = [
         footerText: "text-slate-400",
       },
     },
-    heroBridge:
-      "bg-gradient-to-b from-lime-300/20 via-slate-950/80 to-transparent",
     stageBackground:
       "bg-[radial-gradient(circle_at_top,_rgba(190,242,100,0.18),_rgba(5,10,14,0.98))]",
     card: {
@@ -842,8 +829,6 @@ const magmaVariants: TemplateVariantConfig[] = [
         footerText: "text-slate-400",
       },
     },
-    heroBridge:
-      "bg-gradient-to-b from-rose-400/25 via-slate-950/85 to-transparent",
     stageBackground:
       "bg-[radial-gradient(circle_at_top,_rgba(251,113,133,0.18),_rgba(15,6,8,0.98))]",
     card: {
@@ -952,8 +937,6 @@ const magmaVariants: TemplateVariantConfig[] = [
         footerText: "text-slate-400",
       },
     },
-    heroBridge:
-      "bg-gradient-to-b from-orange-400/25 via-slate-950/85 to-transparent",
     stageBackground:
       "bg-[radial-gradient(circle_at_top,_rgba(251,146,60,0.18),_rgba(15,6,6,0.98))]",
     card: {
@@ -1057,8 +1040,6 @@ const magmaVariants: TemplateVariantConfig[] = [
         footerText: "text-slate-400",
       },
     },
-    heroBridge:
-      "bg-gradient-to-b from-amber-400/25 via-slate-950/85 to-transparent",
     stageBackground:
       "bg-[radial-gradient(circle_at_top,_rgba(251,191,36,0.18),_rgba(18,6,8,0.98))]",
     card: {

@@ -2,13 +2,6 @@
     <div :class="[layout.shell, 'transition-colors duration-500']">
         <NexusHeroSection :theme="templateTheme" :layout="layout" :content="heroContent" />
 
-        <div class="relative h-20 overflow-hidden border-b border-white/5">
-            <div aria-hidden="true" class="absolute inset-0 blur-3xl opacity-60"
-                :class="[activeVariant.heroBridge, 'transition-colors duration-500']"></div>
-            <div aria-hidden="true" class="absolute inset-0 opacity-80"
-                :class="[activeVariant.heroBridge, 'transition-colors duration-500']"></div>
-        </div>
-
         <main :class="[layout.main, 'overflow-hidden transition-colors duration-500']">
             <div aria-hidden="true" class="pointer-events-none absolute inset-0 opacity-70"
                 :class="[activeVariant.stageBackground, 'transition-colors duration-500']"></div>
